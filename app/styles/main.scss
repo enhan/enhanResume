@@ -1,0 +1,84 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+@import "colors.scss";
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cutom-separator{
+  border-bottom: $gray-lighter 2px solid;
+
+}
+
+.personal-header{
+
+  @extend .row;
+  @extend .cutom-separator;
+  padding: 30px;
+
+  color: $my-red;
+
+  h1{
+
+    font-size: 60px;
+
+  }
+
+  .key-passion {
+    @extend .text-center;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 65px;
+    color: $my-strong-grey;
+  }
+
+  .social {
+    @extend .pull-right;
+    font-size: 60px;
+  }
+
+}
+
+.personal-menu{
+
+  @extend .row;
+  @extend .text-center;
+  @extend .cutom-separator;
+  background-color: $my-red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .tile{
+    margin-top : 10px;
+    margin-bottom : 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $white;
+    color: $my-red;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .tile:hover{
+    background-color: $gray-lighter;
+  }
+
+}
+
+.personal-interests{
+
+  @extend .row;
+  @extend .text-center;
+
+
+}
+
+.personal-experience{
+  @extend .row;
+  background-color: $my-red;
+  color: $white;
+}
