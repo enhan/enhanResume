@@ -10,6 +10,7 @@ body {
 }
 
 .cutom-separator{
+
   border-bottom: $gray-lighter 2px solid;
 
 }
@@ -18,9 +19,11 @@ body {
 
   @extend .row;
   @extend .cutom-separator;
-  padding: 30px;
-
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   color: $my-red;
+  padding-bottom: 60px;
 
   h1{
 
@@ -32,7 +35,6 @@ body {
     @extend .text-center;
     margin-top: 30px;
     padding-top: 50px;
-    padding-bottom: 30px;
     font-size: 65px;
     color: $my-strong-grey;
   }
@@ -40,6 +42,15 @@ body {
   .social {
     @extend .pull-right;
     font-size: 60px;
+
+    i {
+      cursor: pointer;
+
+    }
+    i:hover{
+      color: $my-strong-grey;
+    }
+
   }
 
 }
@@ -65,6 +76,7 @@ body {
 
   .tile:hover{
     background-color: $gray-lighter;
+    color: $my-strong-grey;
   }
 
 }
@@ -73,7 +85,12 @@ body {
 
   @extend .row;
   @extend .text-center;
-
+  background-color: $white;
+  color: $my-strong-grey;
+  padding-bottom: 60px;
+  .interest {
+    font-size: 20px;
+  }
 
 }
 
